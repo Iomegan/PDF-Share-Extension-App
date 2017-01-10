@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PDF Share.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>D80D95DD1E24A20C000D3E07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D80D95F51E24A235000D3E07</key>
 		<dict>
 			<key>primary</key>
 			<true/>

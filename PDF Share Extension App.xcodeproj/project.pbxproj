@@ -11,7 +11,34 @@
 		D80D95E61E24A20C000D3E07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D80D95E51E24A20C000D3E07 /* main.m */; };
 		D80D95E81E24A20C000D3E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80D95E71E24A20C000D3E07 /* Assets.xcassets */; };
 		D80D95EB1E24A20C000D3E07 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80D95E91E24A20C000D3E07 /* MainMenu.xib */; };
+		D80D95FA1E24A235000D3E07 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D80D95F91E24A235000D3E07 /* icon.icns */; };
+		D80D95FE1E24A235000D3E07 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80D95FD1E24A235000D3E07 /* ShareViewController.m */; };
+		D80D96021E24A235000D3E07 /* PDF Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D80D95F61E24A235000D3E07 /* PDF Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D80D96001E24A235000D3E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D80D95D61E24A20C000D3E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D80D95F51E24A235000D3E07;
+			remoteInfo = "PDF Share";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D80D96061E24A235000D3E07 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D80D96021E24A235000D3E07 /* PDF Share.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D80D95DE1E24A20C000D3E07 /* PDF Share Extension App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PDF Share Extension App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +48,23 @@
 		D80D95E71E24A20C000D3E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D80D95EA1E24A20C000D3E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D80D95EC1E24A20C000D3E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80D95F61E24A235000D3E07 /* PDF Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PDF Share.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80D95F91E24A235000D3E07 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		D80D95FB1E24A235000D3E07 /* PDF_Share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PDF_Share.entitlements; sourceTree = "<group>"; };
+		D80D95FC1E24A235000D3E07 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		D80D95FD1E24A235000D3E07 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		D80D95FF1E24A235000D3E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D80D95DB1E24A20C000D3E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80D95F31E24A235000D3E07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				D80D95E01E24A20C000D3E07 /* PDF Share Extension App */,
+				D80D95F71E24A235000D3E07 /* PDF Share */,
 				D80D95DF1E24A20C000D3E07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				D80D95DE1E24A20C000D3E07 /* PDF Share Extension App.app */,
+				D80D95F61E24A235000D3E07 /* PDF Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +113,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D80D95F71E24A235000D3E07 /* PDF Share */ = {
+			isa = PBXGroup;
+			children = (
+				D80D95FC1E24A235000D3E07 /* ShareViewController.h */,
+				D80D95FD1E24A235000D3E07 /* ShareViewController.m */,
+				D80D95FF1E24A235000D3E07 /* Info.plist */,
+				D80D95F81E24A235000D3E07 /* Supporting Files */,
+			);
+			path = "PDF Share";
+			sourceTree = "<group>";
+		};
+		D80D95F81E24A235000D3E07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D80D95F91E24A235000D3E07 /* icon.icns */,
+				D80D95FB1E24A235000D3E07 /* PDF_Share.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,15 +143,34 @@
 				D80D95DA1E24A20C000D3E07 /* Sources */,
 				D80D95DB1E24A20C000D3E07 /* Frameworks */,
 				D80D95DC1E24A20C000D3E07 /* Resources */,
+				D80D96061E24A235000D3E07 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D80D96011E24A235000D3E07 /* PBXTargetDependency */,
 			);
 			name = "PDF Share Extension App";
 			productName = "PDF Share Extension App";
 			productReference = D80D95DE1E24A20C000D3E07 /* PDF Share Extension App.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D80D95F51E24A235000D3E07 /* PDF Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80D96031E24A235000D3E07 /* Build configuration list for PBXNativeTarget "PDF Share" */;
+			buildPhases = (
+				D80D95F21E24A235000D3E07 /* Sources */,
+				D80D95F31E24A235000D3E07 /* Frameworks */,
+				D80D95F41E24A235000D3E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PDF Share";
+			productName = "PDF Share";
+			productReference = D80D95F61E24A235000D3E07 /* PDF Share.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +181,10 @@
 				LastUpgradeCheck = 0820;
 				TargetAttributes = {
 					D80D95DD1E24A20C000D3E07 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D80D95F51E24A235000D3E07 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -119,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				D80D95DD1E24A20C000D3E07 /* PDF Share Extension App */,
+				D80D95F51E24A235000D3E07 /* PDF Share */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +216,14 @@
 			files = (
 				D80D95E81E24A20C000D3E07 /* Assets.xcassets in Resources */,
 				D80D95EB1E24A20C000D3E07 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80D95F41E24A235000D3E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80D95FA1E24A235000D3E07 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +239,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D80D95F21E24A235000D3E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80D95FE1E24A235000D3E07 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D80D96011E24A235000D3E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D80D95F51E24A235000D3E07 /* PDF Share */;
+			targetProxy = D80D96001E24A235000D3E07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D80D95E91E24A20C000D3E07 /* MainMenu.xib */ = {
@@ -270,6 +380,32 @@
 			};
 			name = Release;
 		};
+		D80D96041E24A235000D3E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PDF Share/PDF_Share.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "PDF Share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.PDF-Share-Extension-App.PDF-Share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D80D96051E24A235000D3E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PDF Share/PDF_Share.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "PDF Share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.PDF-Share-Extension-App.PDF-Share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -287,6 +423,14 @@
 			buildConfigurations = (
 				D80D95F01E24A20C000D3E07 /* Debug */,
 				D80D95F11E24A20C000D3E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D80D96031E24A235000D3E07 /* Build configuration list for PBXNativeTarget "PDF Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80D96041E24A235000D3E07 /* Debug */,
+				D80D96051E24A235000D3E07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
